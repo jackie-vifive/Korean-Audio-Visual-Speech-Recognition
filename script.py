@@ -13,8 +13,8 @@ def korean_to_roman(korean_text):
 
 def download_and_process_tar_files(dataset_key, file_key_pairs, download_dir, output_dir):
     for label_key, source_key in file_key_pairs:
-        label_download_command = f'/Users/jackieryu/Desktop/speechrecognition/Korean-Audio-Visual-Speech-Recognition/aihubshell -mode d -datasetkey {dataset_key} -filekey {label_key}'
-        source_download_command = f'/Users/jackieryu/Desktop/speechrecognition/Korean-Audio-Visual-Speech-Recognition/aihubshell -mode d -datasetkey {dataset_key} -filekey {source_key}'
+        label_download_command = f'/home/br2543/Korean-Audio-Visual-Speech-Recognition/aihubshell -mode d -datasetkey {dataset_key} -filekey {label_key}'
+        source_download_command = f'/home/br2543/Korean-Audio-Visual-Speech-Recognition/aihubshell -mode d -datasetkey {dataset_key} -filekey {source_key}'
         subprocess.run(label_download_command, shell=True, cwd=download_dir)
         subprocess.run(source_download_command, shell=True, cwd=download_dir)
 
@@ -53,6 +53,8 @@ def process_extracted_data(tar_file, output_dir):
         for dir_name in dirs:
             new_dir_name = korean_to_roman(dir_name)
             os.rename(os.path.join(root, dir_name), os.path.join(root, new_dir_name))
+
+    os.remove(tar_file)
 
 def main():
     dataset_key = 538
