@@ -4,8 +4,10 @@ import json
 from hangul_romanize import Transliter
 from hangul_romanize.rule import academic
 
-os.environ['AIHUB_ID'] = 'b.ryu@columbia.edu'
-os.environ['AIHUB_PW'] = 'Iloveapples547!'
+load_dotenv()
+
+aihub_id = os.environ.get('AIHUB_ID')
+aihub_pw = os.environ.get('AIHUB_PW')
 
 def korean_to_roman(korean_text):
     transliter = Transliter(academic)
