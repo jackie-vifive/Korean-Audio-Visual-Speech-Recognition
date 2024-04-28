@@ -1,0 +1,6 @@
+data/
+.env
+.ipynb_checkpoints/
+009*
+kaldi_formatted_data/
+kaldi_formatted_data2/
