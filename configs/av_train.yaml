@@ -5,7 +5,7 @@ transcripts_path_valid : "label_valid.txt"
 save_dir : 'test'
 
 tokenize_unit : 'grapheme'
-architecture: 'audio_visual'
+architecture: 'audio'
 loss_fn: 'hybrid'
 scheduler : 'noam'
 
@@ -24,8 +24,8 @@ resume_epoch : -1
 max_len : 200
 
 use_audio : True
-use_video : True
-raw_video : True
+use_video : False
+raw_video : False
 
 audio_transform_method : 'raw'
 audio_sample_rate : 14400
