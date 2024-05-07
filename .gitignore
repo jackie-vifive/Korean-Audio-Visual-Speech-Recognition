@@ -4,3 +4,4 @@ data/
 009*
 kaldi_formatted_data/
 kaldi_formatted_data2/
+*__pycache__*
