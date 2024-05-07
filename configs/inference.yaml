@@ -13,14 +13,14 @@ num_gpu : 0
 num_mp : 1 # if num_mp is 1, single process mode. Else, multi processing
 
 search_method : "hybrid" # hybrid/att/ctc
-EndDetect_D : -14 # related to increasement in score
-EndDetect_M : 16 # related to length
+EndDetect_D : -14
+EndDetect_M : 16 
 beam_size : 1
 batch_size : 1
 
 tokenize_unit : "grapheme" # grapheme/character
 architecture: "audio" # audio_visual/audio/video
-loss_fn: "hybrid" # hybrid/att/ctc, This option is used only for selecting the form of the model
+loss_fn: "hybrid" 
 ctc_rate : 0.6
 
 max_len : 200
@@ -28,7 +28,7 @@ max_len : 200
 use_video : False
 raw_video : False
 
-audio_transform_method : "raw" # raw/fbank 
+audio_transform_method : "raw" 
 audio_sample_rate : 14400
 audio_n_channels : 2
 audio_n_mels : None
