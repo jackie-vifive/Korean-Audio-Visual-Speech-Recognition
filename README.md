@@ -1,5 +1,15 @@
 # Korean-Audio-Visual-Speech-Recognition
 
+Jackie Ryu (br2543)
+
+May 6th 2024
+
+## Abstract
+This paper presents a novel method to enhance Korean Audio-Visual Speech Recognition (AVSR) using the Open Large-Scale Korean Audio-Visual Speech (OLKAVS) dataset. We propose a Dual-Stream Transformer Network that processes audio and visual streams independently by means of distinct encoders and Transformer layers. A crucial part of this network is the cross-modal attention, which combines audio and visual streams in a dynamic fashion, and gives a broader context for speech recognition. We further include a lip-estimator to the visual stream, focusing on the most relevant lip movement visual cues, in order to increase noise robustness and save computational cost. We expect our method to significantly outperform traditional hybrid conformer models and establish a new state-of-the-art for Korean AVSR systems.
+
+## Tools
+[aihubshell](https://aihub.or.kr/devsport/apishell/list.do?currMenu=403&topMenu=100) - for downloading data from AIHub
+
 ## Directory Structure
 ```plaintext
 .
