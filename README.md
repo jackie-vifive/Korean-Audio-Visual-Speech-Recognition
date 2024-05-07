@@ -54,3 +54,5 @@ This paper presents a novel method to enhance Korean Audio-Visual Speech Recogni
 6. Check Error Rate
 
 `python visualize.py`
+
+7. Check for output in sample_data/
